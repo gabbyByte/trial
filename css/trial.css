@@ -1,0 +1,10 @@
+body {
+    height: 200vh;
+}
+
+.box {
+    margin-top: 40vh;
+    width: 200px;
+    height: 200px;
+    background: red;
+}

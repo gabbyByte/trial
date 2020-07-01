@@ -1,0 +1,322 @@
+body {
+    background-color: rgb(235, 238, 238);
+}
+
+.cover {
+    background-color: #02203c;
+    height: 76vh;
+    display: flex;
+    overflow: scroll;
+    flex-direction: column;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar {
+    border: none;
+    background-color: #02203c;
+
+}
+
+.section1 {
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    height: 96vh;
+    justify-content: center;
+    align-content: center;
+}
+
+.section1 p {
+    margin: 3rem 0;
+    text-align: center;
+    line-height: 2em;
+}
+
+.btn {
+    margin: 2rem;
+    background-color: rgb(80, 78, 209);
+    padding: 15px 40px;
+    border: none;
+}
+
+.main-body {
+    padding: 4rem 2rem;
+    background-color: rgb(235, 238, 238);
+    z-index: -200;
+}
+
+
+/* card styling */
+.cards {
+    display: flex;
+    flex-grow: 1;
+    margin: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin-top: 20px;
+    width: 300px;
+    height: 350px;
+    padding: 20px;
+    text-align: center;
+}
+
+.part1 {
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.part1 span {
+    padding: 14px;
+    border: solid black 1px;
+    border-radius: 3px;
+}
+
+.card img {
+    width: 120px;
+    height: 100px;
+    border-radius: 2px;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: large;
+}
+
+.part3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem .75rem;
+    height: 300px;
+    margin: 30px 0px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 4px;
+}
+
+marquee img{
+margin-left: 2.5em;
+}
+
+.font-head {
+    font-family: cursive;
+    text-align: center;
+    margin: 3rem;
+}
+
+svg {
+    color: black;
+    width: 50px;
+    height: 100px;
+}
+
+.card:hover svg {
+    color: rgb(108, 108, 226);
+    transform: scale(1.2);
+}
+
+.card:hover {
+    transition: width 2s linear 10s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 4px;
+}
+
+
+.part4 {
+    background: #02203c;
+}
+
+.part4 .questions {
+    padding: 7px;
+    color: white;
+    text-align: center;
+}
+
+
+.questions h3 {
+    margin-top: 10rem;
+}
+
+.questions p {
+    line-height: 1.7em;
+}
+
+
+/* the small boxes */
+.flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+}
+
+.boxes {
+    margin: 10px;
+    border-radius: 5px;
+    background-color: rgb(8, 5, 48);
+    width: 130px;
+    height: 50px;
+}
+
+.odd {
+    border-right: solid rgb(31, 31, 133) 5px;
+}
+
+.even {
+    border-left: solid rgb(35, 35, 165) 5px;
+}
+
+iframe {
+    border-radius: 3px;
+    height: 300px;
+    margin: auto;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+}
+
+.part3 {
+    margin: 20px 4px;
+}
+
+.part3 img {
+    padding: 2rem;
+}
+
+
+/* smartphones */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .boxes {
+        width: 150px;
+        margin-top: 1rem;
+    }
+
+    .left {
+        height: 130vh;
+    }
+
+    .right {
+        height: 130vh;
+    }
+}
+
+/* small screen smartphones */
+@media(max-width:375px) {
+    .boxes {
+        width: 150px;
+        margin-top: 1rem;
+    }
+
+
+}
+
+/* ipads and ipad pro */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .boxes {
+        width: 400px;
+        margin-top: 2rem;
+    }
+}
+
+/* lap-top screens */
+@media only screen and (min-width:1024px) {
+    .card {
+        margin: 3rem;
+    }
+
+    .boxes {
+        width: 400px;
+        margin-top: 2rem;
+    }
+}
+
+.min {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.video {
+    height: auto;
+    margin: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    border-radius: 6px;
+    width: 100%;
+    max-width: 400px;
+}
+
+p {
+    margin: .75em;
+    line-height: 2.5rem;
+    /* text-align: center; */
+}
+
+h3 {
+    margin: 1.5rem;
+}
+
+hr {
+    color: black;
+    max-width: 500px;
+    padding: 3rem;
+    height: 2px;
+}
+
+
+.duo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.constant {
+    width: 500px;
+}
+
+.dta {
+    max-width: 550px;
+}
+
+.dta-img {
+
+    margin-top: 1.5em;
+    background: url('../imgs/oracle.noinline.png') no-repeat;
+    width: 400px;
+    height: 300px;
+}
+
+.p9-text p {
+    text-align: center;
+}
+
+.bld {
+    font-weight: bold;
+}
+
+.lang {
+    text-align: center;
+    line-height: 4em;
+}
